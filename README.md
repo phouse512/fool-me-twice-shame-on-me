@@ -1,4 +1,4 @@
-A collection of guides written as reminders for myself depending on whatever current project I'm hacking on at the time.
+a collection of notes and lessons learned from my coding adventures
 
-*current folders:*
+#current folders:
  - server-admin
