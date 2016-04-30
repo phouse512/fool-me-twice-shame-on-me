@@ -7,8 +7,8 @@
     - you can then run `sudo iptables -L -t nat` to make sure that it worked
         correctly
     - you should see see something like this referencing the ip `10.8.0.0/24`:
-    - ```Chain POSTROUTING (policy ACCEPT)
-    target     prot opt source               destination
-    MASQUERADE  all  --  anywhere             anywhere
-    MASQUERADE  all  --  anywhere             anywhere
-    MASQUERADE  all  --  10.8.0.0/24          anywhere```
+`Chain POSTROUTING (policy ACCEPT)`
+`target     prot opt source               destination `
+`MASQUERADE  all  --  anywhere             anywhere`
+`MASQUERADE  all  --  anywhere             anywhere`
+`MASQUERADE  all  --  10.8.0.0/24          anywhere`
