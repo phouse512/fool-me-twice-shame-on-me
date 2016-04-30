@@ -1,5 +1,8 @@
 # basic openvpn setup
-
+- if you are installing this using the readwrite tutorial, it references debian
+  wheezy, not jessie. For a certain portion of copying rsa templates, check out
+  this
+  [link][http://raspberrypi.stackexchange.com/questions/37372/error-installing-openvpn-files-missing]
 - make sure that the pi's iptables routing is set up correctly, here is the
   iptable command that usually works:
     - `sudo iptables -t nat -A POSTROUTING -s 10.8.0.0/24 -o eth0 -j
