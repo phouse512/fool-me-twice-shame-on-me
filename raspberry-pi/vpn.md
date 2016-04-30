@@ -8,7 +8,15 @@
         correctly
     - you should see see something like this referencing the ip `10.8.0.0/24`:
 `Chain POSTROUTING (policy ACCEPT)`
+
 `target     prot opt source               destination `
+
 `MASQUERADE  all  --  anywhere             anywhere`
+
 `MASQUERADE  all  --  anywhere             anywhere`
+
 `MASQUERADE  all  --  10.8.0.0/24          anywhere`
+
+
+- from `/etc/openvpn/server.conf`, you should be able to comment out the line
+  that looks like: `local 192.168.someip` so that the server correctly restarts
